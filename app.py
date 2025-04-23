@@ -15,8 +15,8 @@ dotenv.load_dotenv()
 
 # Check if we need to create a .env file from the example
 if not os.path.exists(".env") and os.path.exists(".env.example"):
-    print("⚠️  No .env file found but .env.example exists")
-    print("   Consider creating a .env file: cp .env.example .env")
+    print("⚠️  No .env file found but .env exists")
+    print("   Consider creating a .env file: cp .env .env")
     print("   Then add your ANTHROPIC_API_KEY to the .env file")
 
 def main():
